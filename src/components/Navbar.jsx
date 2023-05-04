@@ -19,7 +19,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);  
           }}
         > 
-          <img src={logo} alt="logo" className="w-20 h-9 object-fill" />
+          <img src={logo} alt="logo" className="w-32 h-9 object-fill" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Casey &nbsp;
             <span className="sm:block hidden">
@@ -73,4 +73,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
