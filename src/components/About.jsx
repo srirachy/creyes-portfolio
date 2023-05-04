@@ -38,7 +38,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <div className="flex md:flex-col lg:flex-row">
+      <div className="flex flex-col xl:flex-row">
         <motion.p 
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-[#e6a377] text-[17px] max-w-3xl leading-[30px]"
