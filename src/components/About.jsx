@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { PupperCanvas } from './canvas';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -37,15 +38,18 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p 
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-[#e6a377] text-[17px] max-w-3xl leading-[30px]"
-      >
-        I am a proud fur pup dad, and with the support of my friends and family, have been able to gain a deep understanding of each of my interests.
-        I am a skilled software developer with experience in TypeScript and JavaScript, proficiency in React, Node.js, and Three.js frameworks, and knowledege in WordPress.
-        I am a fast learner and work closely with clients to design and implement practical, scalable, and user-friendly solutions that effectively tackle real-world issues.
-        Let's team up to transform your concepts into reality! 
-      </motion.p>
+      <div className="flex md:flex-col lg:flex-row">
+        <motion.p 
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-[#e6a377] text-[17px] max-w-3xl leading-[30px]"
+        >
+          I am a proud fur pup dad, and with the support of my friends and family, have been able to gain a deep understanding of each of my interests.
+          I am a skilled software developer with experience in TypeScript and JavaScript, proficiency in React, Node.js, and Three.js frameworks, and knowledege in WordPress.
+          I am a fast learner and work closely with clients to design and implement practical, scalable, and user-friendly solutions that effectively tackle real-world issues.
+          Let's team up to transform your concepts into reality! 
+        </motion.p>
+        <PupperCanvas/>
+      </div>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
