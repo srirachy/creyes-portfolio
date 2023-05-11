@@ -7,28 +7,42 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import angular from "./tech/angular.png";
+import bootstrap from "./tech/bootstrap.png";
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
+import dotnet from "./tech/dotnet.png";
 import figma from "./tech/figma.png";
+import firebase from "./tech/firebase.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
+import java from "./tech/java.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
+import php from "./tech/php-logo.png"
+import py from "./tech/python.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import swift from "./tech/swift.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
+import wp from "./tech/wp-logo.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import bitwise from "./company/bitwise.webp";
+import cadence from "./company/cadence.webp";
+import ni from "./company/national-instruments.webp";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import blog from "./full_stack_blog.png";
+import brew from "./brew_maps.png";
+import countdown from "./countdown.png";
+import hilo from "./high_low.png";
+import musicplayer from "./spotify_clone.png";
+import neon from "./neon_weather.png";
+import pkmn from "./pkmn_adopt.png";
+import sandbox from "./sandbox.png";
+import sweet from "./suit_drive.png";
+import visualizer from "./spotify_visualizer.png";
 
 export {
   logo,
@@ -39,24 +53,38 @@ export {
   github,
   menu,
   close,
+  angular,
+  bootstrap,
   css,
-  docker,
+  dotnet,
   figma,
+  firebase,
   git,
   html,
+  java,
   javascript,
   mongodb,
   nodejs,
+  php,
+  py,
   reactjs,
   redux,
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  wp,
+  bitwise,
+  cadence,
+  ni,
+  blog,
+  brew,
+  countdown,
+  hilo,
+  musicplayer,
+  neon,
+  pkmn,
+  sandbox,
+  sweet,
+  swift,
+  visualizer,
 };

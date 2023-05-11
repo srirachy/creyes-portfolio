@@ -14,14 +14,27 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  php,
+  wp,
+  bootstrap,
+  dotnet,
+  java,
+  py,
+  swift,
+  angular,
+  bitwise,
+  cadence,
+  ni,
+  blog,
+  brew,
+  countdown,
+  hilo,
+  musicplayer,
+  neon,
+  pkmn,
+  sandbox,
+  sweet,
+  // visualizer,
   threejs,
 } from "../assets";
 
@@ -109,62 +122,77 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "php",
+    icon: php,
   },
+  {
+    name: "wordpress",
+    icon: wp,
+  },
+  {
+    name: "bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "dotnet",
+    icon: dotnet,
+  },
+  {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "python",
+    icon: py,
+  },
+  {
+    name: "swift",
+    icon: swift,
+  },
+  {
+    name: "angular",
+    icon: angular,
+  }
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "React Developer Apprentice",
+    company_name: "BitWise Industries",
+    icon: bitwise,
+    iconBg: "#756860",
+    date: "March 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Product Engineer",
+    company_name: "Cadence",
+    icon: cadence,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2020 - Nov 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Senior Software Technician",
+    company_name: "National Instruments",
+    icon: ni,
+    iconBg: "#756860",
+    date: "June 2016 - Jan 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
+      "Lorem ipsum.",
     ],
   },
 ];
@@ -172,63 +200,164 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Casey is awesome! Lorem ipsum tho.",
+    name: "Sarah Cullen",
+    designation: "Senior Instructor & Program Lead",
+    company: "BitWise Industries",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Casey is awesome! Lorem ipsum tho.",
+    name: "Juan Lucero",
+    designation: "React-Native Apprentice Lead",
+    company: "BitWise Industries",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Casey is awesome! Lorem ipsum tho.",
+    name: "Dustin Hoekstra",
+    designation: "Application Engineer Architect",
+    company: "Cadence Design Systems",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Blog Full-Stack Web App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This project is awesome! Lorem ipsum tho.",
     tags: [
       {
-        name: "react",
+        name: "typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "crudapi",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "styled-components",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: blog,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Brew Maps",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    "This project is awesome! Lorem ipsum tho.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "brewery api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "styled-components",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: brew,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Countdown App",
+    description:
+      "This project is awesome! Lorem ipsum tho.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "styled-components",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: countdown,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Hi-Lo Guessing Game",
+    description:
+      "This project is awesome! Lorem ipsum tho.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "styled-components",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: hilo,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Spotify Clone w/ Visualizer",
+    description:
+      "This project is awesome! Lorem ipsum tho.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "styled-components",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: musicplayer,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Neon Weather",
+    description:
+      "This project is awesome! Lorem ipsum tho.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "weather api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "styled-components",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: neon,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "SPACe - Shiny Pokemon Adoption Center",
+    description:
+      "This project is awesome! Lorem ipsum tho.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pokemon api",
         color: "green-text-gradient",
       },
       {
@@ -236,28 +365,49 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: pkmn,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Music Event Web Application",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This project is awesome! Lorem ipsum tho.",
     tags: [
       {
-        name: "nextjs",
+        name: "php",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "wordpress",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: sandbox,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Foundations - Suit Drive",
+    description:
+      "This project is awesome! Lorem ipsum tho.",
+    tags: [
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "wordpress",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sweet,
     source_code_link: "https://github.com/",
   },
 ];

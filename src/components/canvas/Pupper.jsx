@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Pupper = ({isMobile}) => {
-  const computer = useGLTF(process.env.PUBLIC_URL + '/pupper-transformed.glb');
+  const doggo = useGLTF(process.env.PUBLIC_URL + '/pupper-transformed.glb');
 
   return (
     <mesh>
@@ -22,10 +22,10 @@ const Pupper = ({isMobile}) => {
         shadow-mapSize={1024}
       />
       <primitive 
-        object={computer.scene}
+        object={doggo.scene}
         scale={isMobile ? 1.5 : 2}
-        position={isMobile ? [0, 0.6, 2.5] : [0, 0.6, 2.5]}
-        rotation={[0, 0, 0]}
+        position={isMobile ? [0, 0.6, 0.5] : [0, 0.6, 2.5]}
+        rotation={[0, 1, 0]}
       />
     </mesh>
   )
@@ -57,7 +57,8 @@ const PupperCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls 
+        <OrbitControls
+          autoRotate 
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}

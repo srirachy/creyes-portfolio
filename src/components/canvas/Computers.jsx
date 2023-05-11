@@ -5,7 +5,6 @@ import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF(process.env.PUBLIC_URL + '/desktop-transformed.glb');
-  // useGLTF.preload(process.env.PUBLIC_URL + '/desktop.gltf');
   return (
     <mesh>
       <hemisphereLight 
@@ -24,8 +23,8 @@ const Computers = ({ isMobile }) => {
       <primitive 
         object={computer.scene}
         scale={isMobile ? .5 : 1}
-        position={isMobile ? [0, -6, -4] : [0,-16, -4]}
-        rotation={[0, 0, 0]}
+        position={isMobile ? [0, -8, -0.5] : [0, -15.5, -2]}
+        rotation={[0, 1.33, 0]}
       />
     </mesh>
   )

@@ -8,19 +8,18 @@ const Hero = () => {
     <section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
-          {/* could change to orange theme and change background image thru assets */}
           <div className="w-5 h-5 rounded-full bg-[#ad551a]" />
           <div className="w-1 sm:h-80 h-40 dark-orange-gradient" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} texdt-white`}>Hi, I'm <span className="text-[#ad551a]">Casey</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>As a full-stack/front-end engineer <br className="sm:block hidden" /> we can build creative products together</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>With my proficiency as a full-stack engineer<br className="sm:block hidden" /> we can build creative products together</p>
         </div>
       </div>
       <ComputersCanvas />
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#e6a377] flex justify-center items-start p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#5e4231] flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0]
@@ -30,7 +29,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: 'loop'
               }}
-              className="w-3 h-3 rounded-full bg-[#e6a377] mb-1" 
+              className="w-3 h-3 rounded-full bg-[#5e4231] mb-1" 
             />
           </div>
         </a>
@@ -39,4 +38,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
