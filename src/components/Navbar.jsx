@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#211711]`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link 
-          to="/" 
+          to="/creyes-portfolio/" 
           className="flex items-center gap-2" 
           onClick={() => {
             setActive("");
