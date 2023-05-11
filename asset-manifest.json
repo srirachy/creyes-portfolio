@@ -1,16 +1,43 @@
 {
   "files": {
-    "main.css": "/creyes-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/creyes-portfolio/static/js/main.7f69536c.js",
-    "static/js/787.aeca62f9.chunk.js": "/creyes-portfolio/static/js/787.aeca62f9.chunk.js",
-    "static/media/logo.svg": "/creyes-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/creyes-portfolio/static/css/main.953e5bee.css",
+    "main.js": "/creyes-portfolio/static/js/main.46e0f891.js",
+    "static/media/brew_maps.png": "/creyes-portfolio/static/media/brew_maps.3be0080ef107d976532b.png",
+    "static/media/herobg.png": "/creyes-portfolio/static/media/herobg.7dff5324ba4071a5afe1.png",
+    "static/media/neon_weather.png": "/creyes-portfolio/static/media/neon_weather.ac2dc825dab7144aabf9.png",
+    "static/media/full_stack_blog.png": "/creyes-portfolio/static/media/full_stack_blog.f54bbe09433f81f82b15.png",
+    "static/media/high_low.png": "/creyes-portfolio/static/media/high_low.eebc8bcb84a9498b45d6.png",
+    "static/media/sandbox.png": "/creyes-portfolio/static/media/sandbox.7b24c503c0a131ece75c.png",
+    "static/media/countdown.png": "/creyes-portfolio/static/media/countdown.0411e41a40047b3eaae8.png",
+    "static/media/suit_drive.png": "/creyes-portfolio/static/media/suit_drive.114c6915dea6c4455393.png",
+    "static/media/spotify_clone.png": "/creyes-portfolio/static/media/spotify_clone.9f3a14f8698d95642d12.png",
+    "static/media/swift.png": "/creyes-portfolio/static/media/swift.14331c234ae504c82f29.png",
+    "static/media/spotify_visualizer.png": "/creyes-portfolio/static/media/spotify_visualizer.5e8015c53f8a27af71fd.png",
+    "static/media/pkmn_adopt.png": "/creyes-portfolio/static/media/pkmn_adopt.0923609bf552df005a04.png",
+    "static/media/web.png": "/creyes-portfolio/static/media/web.c0cb2cc13791a26822d3.png",
+    "static/media/cadence.webp": "/creyes-portfolio/static/media/cadence.67b8bc658f7da0cbdac2.webp",
+    "static/media/java.png": "/creyes-portfolio/static/media/java.5d5cffa04d820ba0644c.png",
+    "static/media/php-logo.png": "/creyes-portfolio/static/media/php-logo.3985f2d5235e5e1e9bf8.png",
+    "static/media/wp-logo.png": "/creyes-portfolio/static/media/wp-logo.206fe49ec714de6cf8a4.png",
+    "static/media/firebase.png": "/creyes-portfolio/static/media/firebase.18e8cd693c55dbadc622.png",
+    "static/media/software.png": "/creyes-portfolio/static/media/software.08c8d93b8142c41a9e63.png",
+    "static/media/bootstrap.png": "/creyes-portfolio/static/media/bootstrap.ffb9feeab82b4f8d39f5.png",
+    "static/media/dotnet.png": "/creyes-portfolio/static/media/dotnet.985bdcfcb8514c903cfd.png",
+    "static/media/stack.png": "/creyes-portfolio/static/media/stack.15e7b89f1018dcdba6e7.png",
+    "static/media/product.png": "/creyes-portfolio/static/media/product.f8923ce18390029928ac.png",
+    "static/media/angular.png": "/creyes-portfolio/static/media/angular.ebea27093b0c414c2e63.png",
+    "static/media/threejs.png": "/creyes-portfolio/static/media/threejs.cd4097ee789d74018928.png",
+    "static/media/github.png": "/creyes-portfolio/static/media/github.ed1c06d925fff0b57e32.png",
+    "static/media/national-instruments.webp": "/creyes-portfolio/static/media/national-instruments.f01b182481e16cd81a3f.webp",
+    "static/media/bitwise.webp": "/creyes-portfolio/static/media/bitwise.c7f9ac2bc66a2e96076f.webp",
+    "static/media/close.svg": "/creyes-portfolio/static/media/close.52ab0d39b2c514b8322115c951eac5a2.svg",
+    "static/media/menu.svg": "/creyes-portfolio/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "index.html": "/creyes-portfolio/index.html",
-    "main.073c9b0a.css.map": "/creyes-portfolio/static/css/main.073c9b0a.css.map",
-    "main.7f69536c.js.map": "/creyes-portfolio/static/js/main.7f69536c.js.map",
-    "787.aeca62f9.chunk.js.map": "/creyes-portfolio/static/js/787.aeca62f9.chunk.js.map"
+    "main.953e5bee.css.map": "/creyes-portfolio/static/css/main.953e5bee.css.map",
+    "main.46e0f891.js.map": "/creyes-portfolio/static/js/main.46e0f891.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7f69536c.js"
+    "static/css/main.953e5bee.css",
+    "static/js/main.46e0f891.js"
   ]
 }
