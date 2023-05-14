@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { logo, menu, close, dl } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -29,15 +29,36 @@ const Navbar = () => {
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
-            <li 
-              key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-[#e6a377]"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
+            link.id !== 'resume' ?
+              <li 
+                key={link.id}
+                className={`${
+                  active === link.title ? "text-white" : "text-[#e6a377]"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                onClick={() => setActive(link.title)}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            :
+              <li 
+                key={link.id}
+                className={`${
+                  active === link.title ? "text-white" : "text-[#e6a377]"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              >
+                <a 
+                  href={link.file}
+                  download={link.filename}
+                  className="flex flex-row"
+                >
+                  {link.title}
+                  <img
+                    src={dl}
+                    alt="download-icon"
+                    className="w-[20px] h-[20px] mt-1"
+                  />
+                </a>
+              </li>
           ))}
         </ul>
 

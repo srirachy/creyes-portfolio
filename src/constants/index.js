@@ -34,8 +34,10 @@ import {
   pkmn,
   sandbox,
   sweet,
-  // visualizer,
   threejs,
+  sarah,
+  juan,
+  dustin,
 } from "../assets";
 
 export const navLinks = [
@@ -51,6 +53,12 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "resume",
+    title: "Resume",
+    file: process.env.PUBLIC_URL + "/Reyes_Casey_Digital_Resume.pdf",
+    filename: "Reyes_Casey_Digital_Resume.pdf"
+  }
 ];
 
 const services = [
@@ -162,24 +170,27 @@ const experiences = [
     icon: bitwise,
     iconBg: "#756860",
     date: "March 2022 - Present",
+    description: "Received hands-on training, working alongside experienced developers to support real clients",
     points: [
-      "Lorem ipsum.",
-      "Lorem ipsum.",
-      "Lorem ipsum.",
-      "Lorem ipsum.",
+      "Independently reimagined Spotify using their API with technologies such as TypeScript, React, Express, React " + 
+      "Three Fiber for visualizations, and Redux",
+      "Documented application changes and reviewed code",
+      "Refactored code & algorithms for improved performance and robustness",
+      "Contributed 1k+ lines of full-stack blog application code in TypeScript, React, Express, MongoDB, and Jest",
     ],
   },
   {
     title: "Product Engineer",
-    company_name: "Cadence",
+    company_name: "Cadence Design Systems",
     icon: cadence,
     iconBg: "#E6DEDD",
     date: "Jan 2020 - Nov 2020",
+    description: "Designed, developed, and tested automation scripts for internal and customer use",
     points: [
-      "Lorem ipsum.",
-      "Lorem ipsum.",
-      "Lorem ipsum.",
-      "Lorem ipsum.",
+      "Performed regression tests to ensure developed systems continue to function after any changes",
+      "Updated and tested websites for customer training material",
+      "Developed a script that accurately generates XML files containing component data",
+      "Design, develop, and implement a script to utilize remote simulations",
     ],
   },
   {
@@ -188,11 +199,13 @@ const experiences = [
     icon: ni,
     iconBg: "#756860",
     date: "June 2016 - Jan 2020",
+    description: "Responsible for updating, developing, and testing scripts for internal tasks",
     points: [
-      "Lorem ipsum.",
-      "Lorem ipsum.",
-      "Lorem ipsum.",
-      "Lorem ipsum.",
+      "Refactored a critical Tier-1 customer legacy software system that improved efficiency by 90%",
+      "Assisted in documenting high-level descriptions and usage instructions for various scripts",
+      "Created and presented Python training material to internal team members",
+      "Collaborated with a team member to create a script that enables revision control for " + 
+      "project items in a circuit design software",
     ],
   },
 ];
@@ -200,27 +213,36 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Casey is awesome! Lorem ipsum tho.",
+      "Casey is awesome! Lorem ipsum tho." +
+      "Casey is awesome! Lorem ipsum tho." +
+      "Casey is awesome! Lorem ipsum tho." +
+      "Casey is awesome! Lorem ipsum tho." +
+      "Casey is awesome!",
     name: "Sarah Cullen",
     designation: "Senior Instructor & Program Lead",
     company: "BitWise Industries",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: sarah,
   },
   {
     testimonial:
-      "Casey is awesome! Lorem ipsum tho.",
+      "Casey is awesome! Lorem ipsum tho." +
+      "Casey is awesome! Lorem ipsum tho." +
+      "Casey is awesome! Lorem ipsum tho." +
+      "Casey is awesome! Lorem ipsum tho." +
+      "Casey is awesome!",
     name: "Juan Lucero",
     designation: "React-Native Apprentice Lead",
     company: "BitWise Industries",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: juan,
   },
   {
     testimonial:
-      "Casey is awesome! Lorem ipsum tho.",
+      "Not only is Casey fun to work with, he also continuously impressed me with his creative problem-solving abilities. " +
+      "He is a quick learner and a fantastic coder in any language.",
     name: "Dustin Hoekstra",
     designation: "Application Engineer Architect",
     company: "Cadence Design Systems",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: dustin,
   },
 ];
 
@@ -228,7 +250,7 @@ const projects = [
   {
     name: "Blog Full-Stack Web App",
     description:
-      "This project is awesome! Lorem ipsum tho.",
+      "Write about your life, your interests, or anything that comes to mind.",
     tags: [
       {
         name: "typescript",
@@ -244,12 +266,13 @@ const projects = [
       },
     ],
     image: blog,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Wosen100/fullstack-react-blog-app",
+    deploy_code_link: "",
   },
   {
     name: "Brew Maps",
     description:
-    "This project is awesome! Lorem ipsum tho.",
+    "Find the closest breweries near you! Or anywhere!",
     tags: [
       {
         name: "react",
@@ -265,12 +288,13 @@ const projects = [
       },
     ],
     image: brew,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/javiguerra777/brewery-locator",
+    deploy_code_link: "https://srirachy.github.io/brewery_locator/",
   },
   {
     name: "Countdown App",
     description:
-      "This project is awesome! Lorem ipsum tho.",
+      "A simple way to track an upcoming date that you're excited about.",
     tags: [
       {
         name: "react",
@@ -282,12 +306,13 @@ const projects = [
       },
     ],
     image: countdown,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/srirachy/countdown_app",
+    deploy_code_link: "",
   },
   {
     name: "Hi-Lo Guessing Game",
     description:
-      "This project is awesome! Lorem ipsum tho.",
+      "A number guessing game in the form of playing cards with two modes of play!",
     tags: [
       {
         name: "react",
@@ -303,12 +328,13 @@ const projects = [
       },
     ],
     image: hilo,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/srirachy/highlow_v2",
+    deploy_code_link: "https://srirachy.github.io/highlow_v2/",
   },
   {
-    name: "Spotify Clone w/ Visualizer",
+    name: "Spotify w/ Visualizer",
     description:
-      "This project is awesome! Lorem ipsum tho.",
+      "Ever wish Spotify still had a music visualizer? This project brings that concept back to life!",
     tags: [
       {
         name: "typescript",
@@ -324,12 +350,13 @@ const projects = [
       },
     ],
     image: musicplayer,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/srirachy/capstone_music_player",
+    deploy_code_link: "",
   },
   {
     name: "Neon Weather",
     description:
-      "This project is awesome! Lorem ipsum tho.",
+      "Basically a weather tracker, but with neon lights!",
     tags: [
       {
         name: "react",
@@ -345,12 +372,13 @@ const projects = [
       },
     ],
     image: neon,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/srirachy/neonweather",
+    deploy_code_link: "https://srirachy.github.io/neonweather/",
   },
   {
-    name: "SPACe - Shiny Pokemon Adoption Center",
+    name: "SPACe - Shiny Pokémon Adoption Center",
     description:
-      "This project is awesome! Lorem ipsum tho.",
+      "Adopt your favorite Pokémon in their shiny sprites from Kanto to Galar.",
     tags: [
       {
         name: "react",
@@ -366,12 +394,13 @@ const projects = [
       },
     ],
     image: pkmn,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/srirachy/pokemon_adoption",
+    deploy_code_link: "https://srirachy.github.io/pokemon_adoption/",
   },
   {
-    name: "Music Event Web Application",
+    name: "Music Event Web App",
     description:
-      "This project is awesome! Lorem ipsum tho.",
+      "Don't miss live stream performances from these artists. View details of every artist, food truck, and shops to support the local talent.",
     tags: [
       {
         name: "php",
@@ -387,12 +416,13 @@ const projects = [
       },
     ],
     image: sandbox,
-    source_code_link: "https://github.com/",
+    source_code_link: "",
+    deploy_code_link: "",
   },
   {
     name: "Foundations - Suit Drive",
     description:
-      "This project is awesome! Lorem ipsum tho.",
+      "Have any clothes you don't need anymore? Donate any extra clothing for a good cause here!",
     tags: [
       {
         name: "php",
@@ -408,7 +438,8 @@ const projects = [
       },
     ],
     image: sweet,
-    source_code_link: "https://github.com/",
+    source_code_link: "",
+    deploy_code_link: "https://foundation4fusd.org/event/suit-drive/",
   },
 ];
 

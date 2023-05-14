@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import deploy from "./web-icon.png";
+import dl from "./download-icon.png";
 
 import angular from "./tech/angular.png";
 import bootstrap from "./tech/bootstrap.png";
@@ -44,6 +46,10 @@ import sandbox from "./sandbox.png";
 import sweet from "./suit_drive.png";
 import visualizer from "./spotify_visualizer.png";
 
+import dustin from "./testimonials/dustin.webp";
+import juan from "./testimonials/juan.webp";
+import sarah from "./testimonials/sarah.webp";
+
 export {
   logo,
   software,
@@ -53,6 +59,8 @@ export {
   github,
   menu,
   close,
+  deploy,
+  dl,
   angular,
   bootstrap,
   css,
@@ -87,4 +95,7 @@ export {
   sweet,
   swift,
   visualizer,
+  dustin,
+  juan,
+  sarah,
 };
