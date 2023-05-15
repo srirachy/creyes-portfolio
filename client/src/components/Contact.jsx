@@ -8,6 +8,7 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion'; 
+import { isLocal } from '../utils/functions';
 
 const Contact = () => {
   const formRef = useRef();
@@ -19,14 +20,15 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false);
   const [token, setToken] = useState([]);
-  const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
-  const secretKey = process.env.REACT_APP_RECAPTCHA_SECRET_KEY;
+  const siteKey = isLocal(window.location.hostname) ? process.env.REACT_APP_RECAPTCHA_SITE_KEY_LOCAL : process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+  const secretKey = isLocal(window.location.hostname) ? process.env.REACT_APP_RECAPTCHA_SITE_KEY_LOCAL : process.env.REACT_APP_RECAPTCHA_SECRET_KEY;
+  const serverUrl = isLocal(window.location.hostname) ? 'https://localhost:3000' : process.env.REACT_APP_SERVER_DOMAIN;
 
   const verifyToken = async (token) => {
     const apiRes = [];
 
     try {
-      const response = await axios.post(`https://creyes-portfolio.vercel.app/verify-token`, {
+      const response = await axios.post(`${serverUrl}/verify-token`, {
         token,
         secretKey,
       });
