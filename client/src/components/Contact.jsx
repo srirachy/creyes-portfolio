@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import axios from 'axios';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -9,48 +11,81 @@ import { slideIn } from '../utils/motion';
 
 const Contact = () => {
   const formRef = useRef();
+  const captchaRef = useRef(null);
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: '',
   })
   const [loading, setLoading] = useState(false);
+  const [token, setToken] = useState([]);
+  const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY_LOCAL;
+  const secretKey = process.env.REACT_APP_RECAPTCHA_SECRET_KEY_LOCAL;
 
+  const verifyToken = async (token) => {
+    const apiRes = [];
+
+    try {
+      const response = await axios.post(`http://localhost:8000/verify-token`, {
+        token,
+        secretKey,
+      });
+
+      apiRes.push(response['data']);
+      return apiRes;
+    } catch (err) {
+      console.log(err);
+    }
+  };
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     setForm({ ...form, [name]: value });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const curToken = captchaRef.current.getValue();
     setLoading(true);
 
-    emailjs.send(
-        process.env.REACT_APP_EMAIL_SERVICE_ID,
-        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: 'Casey',
-          from_email: form.email,
-          to_email: process.env.REACT_APP_PERSONAL_EMAIL,
-          message: form.message,
-        },
-        process.env.REACT_APP_EMAIL_PUBLIC_KEY,
-      )
-      .then(() => {
-        setLoading(false);
-        alert('Thank you. I will get back to you as soon as possible.');
+    if (token) {
+      const isToken = await verifyToken(curToken);
+      setToken(isToken);
 
-        setForm({
-          name: '',
-          email: '',
-          message: '',
-        })
-      }, (error) => {
-        setLoading(false);
-        console.log(error);
-        alert('Something went wrong');
-      })
+      if(token[0].success === true) {
+        console.log("you are not a bot"); // remove later
+        emailjs.send(
+            process.env.REACT_APP_EMAIL_SERVICE_ID,
+            process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+            {
+              from_name: form.name,
+              to_name: 'Casey',
+              from_email: form.email,
+              to_email: process.env.REACT_APP_PERSONAL_EMAIL,
+              message: form.message,
+            },
+            process.env.REACT_APP_EMAIL_PUBLIC_KEY,
+          )
+          .then(() => {
+            setLoading(false);
+            alert('Thank you. I will get back to you as soon as possible.');
+    
+            setForm({
+              name: '',
+              email: '',
+              message: '',
+            })
+          }, (error) => {
+            setLoading(false);
+            console.log(error);
+            alert('Something went wrong');
+          }
+        );
+      } else {
+        console.log("you are a bot");
+      }
+    }
+
   };
 
   return (
@@ -101,6 +136,11 @@ const Contact = () => {
             />
           </label>
 
+          <ReCAPTCHA
+            className="recaptcha"
+            sitekey={siteKey}
+            ref={captchaRef}
+          />
           <button
             type="submit"
             className="bg-[#5e4231] py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-[#2e2018] rounded-xl"
