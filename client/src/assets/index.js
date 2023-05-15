@@ -49,6 +49,7 @@ import visualizer from "./spotify_visualizer.png";
 import dustin from "./testimonials/dustin.webp";
 import juan from "./testimonials/juan.webp";
 import sarah from "./testimonials/sarah.webp";
+import donnie from "./testimonials/donnie.webp";
 
 export {
   logo,
@@ -98,4 +99,5 @@ export {
   dustin,
   juan,
   sarah,
+  donnie,
 };

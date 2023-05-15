@@ -38,6 +38,7 @@ import {
   sarah,
   juan,
   dustin,
+  donnie,
 } from "../assets";
 
 export const navLinks = [
@@ -211,25 +212,22 @@ const experiences = [
 ];
 
 const testimonials = [
+  // {
+  //   testimonial:
+  //     "Casey is awesome! Lorem ipsum tho." +
+  //     "Casey is awesome! Lorem ipsum tho." +
+  //     "Casey is awesome! Lorem ipsum tho." +
+  //     "Casey is awesome! Lorem ipsum tho." +
+  //     "Casey is awesome!",
+  //   name: "Sarah Cullen",
+  //   designation: "Senior Instructor & Program Lead",
+  //   company: "BitWise Industries",
+  //   image: sarah,
+  // },
   {
     testimonial:
-      "Casey is awesome! Lorem ipsum tho." +
-      "Casey is awesome! Lorem ipsum tho." +
-      "Casey is awesome! Lorem ipsum tho." +
-      "Casey is awesome! Lorem ipsum tho." +
-      "Casey is awesome!",
-    name: "Sarah Cullen",
-    designation: "Senior Instructor & Program Lead",
-    company: "BitWise Industries",
-    image: sarah,
-  },
-  {
-    testimonial:
-      "Casey is awesome! Lorem ipsum tho." +
-      "Casey is awesome! Lorem ipsum tho." +
-      "Casey is awesome! Lorem ipsum tho." +
-      "Casey is awesome! Lorem ipsum tho." +
-      "Casey is awesome!",
+      "I had the pleasure of working with Casey. He excels at taking on new projects, fearlessly tackling complex concepts. " +
+      "He will undoubtedly be a valuable asset to any company he joins.",
     name: "Juan Lucero",
     designation: "React-Native Apprentice Lead",
     company: "BitWise Industries",
@@ -238,12 +236,21 @@ const testimonials = [
   {
     testimonial:
       "Not only is Casey fun to work with, he also continuously impressed me with his creative problem-solving abilities. " +
-      "He is a quick learner and a fantastic coder in any language.",
+      "He is a quick learner, creative thinker, and a fantastic coder in any language.",
     name: "Dustin Hoekstra",
     designation: "Application Engineer Architect",
     company: "Cadence Design Systems",
     image: dustin,
   },
+  {
+    testimonial:
+      "Casey is an amazing person to work with. With his quick learning ability, helpful nature, and eagerness to explore " +
+      "new technologies, Casey proves to be an exceptional developer.",
+    name: "Donnie Gil",
+    designation: "React Apprentice",
+    company: "BitWise Industries",
+    image: donnie,
+  }
 ];
 
 const projects = [
