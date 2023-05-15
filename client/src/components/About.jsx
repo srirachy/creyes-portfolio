@@ -1,11 +1,12 @@
 import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
+import { isFirefox } from 'react-device-detect';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-// import { PupperCanvas } from './canvas';
+import { PupperCanvas } from './canvas';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -48,7 +49,7 @@ const About = () => {
           I am a fast learner and work closely with clients to design and implement practical, scalable, and user-friendly solutions that effectively tackle real-world issues.
           Let's team up to transform your concepts into reality! 
         </motion.p>
-        {/* <PupperCanvas/> */}
+        {isFirefox && <PupperCanvas />}
       </div>
 
       <div className="mt-20 flex flex-wrap gap-10">

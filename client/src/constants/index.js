@@ -5,8 +5,6 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
@@ -14,12 +12,14 @@ import {
   mongodb,
   git,
   figma,
-  php,
   wp,
-  bootstrap,
   dotnet,
-  java,
   py,
+  html,
+  css,
+  php,
+  bootstrap,
+  java,
   swift,
   angular,
   bitwise,
@@ -35,7 +35,7 @@ import {
   sandbox,
   sweet,
   threejs,
-  sarah,
+  // sarah,
   juan,
   dustin,
   donnie,
@@ -82,14 +82,6 @@ const services = [
 ];
 
 const technologies = [
-  // {
-  //   name: "HTML 5",
-  //   icon: html,
-  // },
-  // {
-  //   name: "CSS 3",
-  //   icon: css,
-  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -130,38 +122,46 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  // {
-  //   name: "php",
-  //   icon: php,
-  // },
   {
     name: "wordpress",
     icon: wp,
   },
-  // {
-  //   name: "bootstrap",
-  //   icon: bootstrap,
-  // },
   {
     name: "dotnet",
     icon: dotnet,
   },
-  // {
-  //   name: "java",
-  //   icon: java,
-  // },
   {
     name: "python",
     icon: py,
   },
-  // {
-  //   name: "swift",
-  //   icon: swift,
-  // },
-  // {
-  //   name: "angular",
-  //   icon: angular,
-  // }
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "php",
+    icon: php,
+  },
+  {
+    name: "bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "swift",
+    icon: swift,
+  },
+  {
+    name: "angular",
+    icon: angular,
+  }
 ];
 
 const experiences = [
