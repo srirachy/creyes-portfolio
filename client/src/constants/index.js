@@ -82,14 +82,14 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -130,38 +130,38 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "php",
-    icon: php,
-  },
+  // {
+  //   name: "php",
+  //   icon: php,
+  // },
   {
     name: "wordpress",
     icon: wp,
   },
-  {
-    name: "bootstrap",
-    icon: bootstrap,
-  },
+  // {
+  //   name: "bootstrap",
+  //   icon: bootstrap,
+  // },
   {
     name: "dotnet",
     icon: dotnet,
   },
-  {
-    name: "java",
-    icon: java,
-  },
+  // {
+  //   name: "java",
+  //   icon: java,
+  // },
   {
     name: "python",
     icon: py,
   },
-  {
-    name: "swift",
-    icon: swift,
-  },
-  {
-    name: "angular",
-    icon: angular,
-  }
+  // {
+  //   name: "swift",
+  //   icon: swift,
+  // },
+  // {
+  //   name: "angular",
+  //   icon: angular,
+  // }
 ];
 
 const experiences = [
