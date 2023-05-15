@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { isBrowser } from "react-device-detect";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {isBrowser && <Tech />}
         <Works />
         <Feedbacks />
         <div className="relative z-0">
