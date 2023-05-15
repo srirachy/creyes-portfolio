@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-import { isFirefox, isBrowser } from 'react-device-detect';
+import { isFirefox, isMobile } from 'react-device-detect';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -49,7 +49,7 @@ const About = () => {
           I am a fast learner and work closely with clients to design and implement practical, scalable, and user-friendly solutions that effectively tackle real-world issues.
           Let's team up to transform your concepts into reality! 
         </motion.p>
-        {(isBrowser && isFirefox) && <PupperCanvas />}
+        {(isFirefox || isMobile) && <PupperCanvas />}
       </div>
 
       <div className="mt-20 flex flex-wrap gap-10">
