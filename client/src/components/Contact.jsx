@@ -19,14 +19,14 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false);
   const [token, setToken] = useState([]);
-  const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY_LOCAL;
-  const secretKey = process.env.REACT_APP_RECAPTCHA_SECRET_KEY_LOCAL;
+  const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+  const secretKey = process.env.REACT_APP_RECAPTCHA_SECRET_KEY;
 
   const verifyToken = async (token) => {
     const apiRes = [];
 
     try {
-      const response = await axios.post(`http://localhost:8000/verify-token`, {
+      const response = await axios.post(`https://creyes-portfolio.vercel.app/verify-token`, {
         token,
         secretKey,
       });
@@ -51,8 +51,8 @@ const Contact = () => {
     if (token) {
       const isToken = await verifyToken(curToken);
       setToken(isToken);
-
-      if(token[0].success === true) {
+      console.log(isToken);
+      if(isToken[0].success === true) {
         console.log("you are not a bot"); // remove later
         emailjs.send(
             process.env.REACT_APP_EMAIL_SERVICE_ID,
