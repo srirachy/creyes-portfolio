@@ -57,8 +57,8 @@ export const navLinks = [
   {
     id: "resume",
     title: "Resume",
-    file: process.env.PUBLIC_URL + "/Reyes_Casey_Digital_Resume.pdf",
-    filename: "Reyes_Casey_Digital_Resume.pdf"
+    file: process.env.PUBLIC_URL + "/Reyes_Casey_Resume_Digital.pdf",
+    filename: "Reyes_Casey_Resume_Digital.pdf"
   }
 ];
 
