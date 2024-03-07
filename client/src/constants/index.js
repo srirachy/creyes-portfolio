@@ -32,8 +32,9 @@ import {
   musicplayer,
   neon,
   pkmn,
-  sandbox,
+  // sandbox,
   sweet,
+  willoz,
   threejs,
   // sarah,
   juan,
@@ -68,7 +69,7 @@ const services = [
     icon: stack,
   },
   {
-    title: "Web Developer",
+    title: "Front-End Developer",
     icon: web,
   },
   {
@@ -166,18 +167,18 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React Developer Apprentice",
+    title: "Software Developer",
     company_name: "BitWise Industries",
     icon: bitwise,
     iconBg: "#756860",
     date: "March 2022 - Present",
-    description: "Received hands-on training, working alongside experienced developers to support real clients",
+    description: "Focused on optimizing web application interfaces and performance",
     points: [
-      "Independently reimagined Spotify using their API with technologies such as TypeScript, React, Express, React " + 
-      "Three Fiber for visualizations, and Redux",
-      "Documented application changes and reviewed code",
-      "Refactored code & algorithms for improved performance and robustness",
-      "Contributed 1k+ lines of full-stack blog application code in TypeScript, React, Express, MongoDB, and Jest",
+      "Enhanced web app UX/UI, improving performance by 40% and customer satisfaction by 25%",
+      "Developed 20+ reusable React components, increasing development and efficiency by 30%",
+      "Implemented Agile practices, reducing project delivery times by 15%",
+      "Integrated APIs into web apps for improved functionality and data management",
+      "Leveraged CSS frameworks like Tailwind and Bootstrap for consistent UI development",
     ],
   },
   {
@@ -188,10 +189,9 @@ const experiences = [
     date: "Jan 2020 - Nov 2020",
     description: "Designed, developed, and tested automation scripts for internal and customer use",
     points: [
-      "Performed regression tests to ensure developed systems continue to function after any changes",
-      "Updated and tested websites for customer training material",
-      "Developed a script that accurately generates XML files containing component data",
-      "Design, develop, and implement a script to utilize remote simulations",
+      "Automated manual workflows, boosting process efficiency by 300% and reducing turnaround times",
+      "Led the transition of VBScript codebase to Python, enhancing application maintainability",
+      "Worked closely with clients to deliver tailored software solutions",
     ],
   },
   {
@@ -202,11 +202,9 @@ const experiences = [
     date: "June 2016 - Jan 2020",
     description: "Responsible for updating, developing, and testing scripts for internal tasks",
     points: [
-      "Refactored a critical Tier-1 customer legacy software system that improved efficiency by 90%",
-      "Assisted in documenting high-level descriptions and usage instructions for various scripts",
-      "Created and presented Python training material to internal team members",
-      "Collaborated with a team member to create a script that enables revision control for " + 
-      "project items in a circuit design software",
+      "Redesigned custom software service for a key customer, enhancing service delivery",
+      "Automated client tasks, improving productivity",
+      "Trained internal team in Python, boosting development capabilities",
     ],
   },
 ];
@@ -278,8 +276,7 @@ const projects = [
   },
   {
     name: "Brew Maps",
-    description:
-    "Find the closest breweries near you! Or anywhere!",
+    description: "Find the closest breweries near you! Or anywhere!",
     tags: [
       {
         name: "react",
@@ -362,8 +359,7 @@ const projects = [
   },
   {
     name: "Neon Weather",
-    description:
-      "Basically a weather tracker, but with neon lights!",
+    description: "Basically a weather tracker, but with neon lights!",
     tags: [
       {
         name: "react",
@@ -404,28 +400,28 @@ const projects = [
     source_code_link: "https://github.com/srirachy/pokemon_adoption",
     deploy_code_link: "https://srirachy.github.io/pokemon_adoption/",
   },
-  {
-    name: "Music Event Web App",
-    description:
-      "Don't miss live stream performances from these artists. View details of every artist, food truck, and shops to support the local talent.",
-    tags: [
-      {
-        name: "php",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "wordpress",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: sandbox,
-    source_code_link: "",
-    deploy_code_link: "",
-  },
+  // {
+  //   name: "Music Event Web App",
+  //   description:
+  //     "Don't miss live stream performances from these artists. View details of every artist, food truck, and shops to support the local talent.",
+  //   tags: [
+  //     {
+  //       name: "php",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "wordpress",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "bootstrap",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: sandbox,
+  //   source_code_link: "",
+  //   deploy_code_link: "",
+  // },
   {
     name: "Foundations - Suit Drive",
     description:
@@ -447,6 +443,28 @@ const projects = [
     image: sweet,
     source_code_link: "",
     deploy_code_link: "https://foundation4fusd.org/event/suit-drive/",
+  },
+  {
+    name: "Willoz",
+    description:
+      "Shop homes. Leave an enquiry for houses you're interested in. Your new home awaits you!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "customapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: willoz,
+    source_code_link: "https://github.com/srirachy/willoz-frontend",
+    deploy_code_link: "",
   },
 ];
 

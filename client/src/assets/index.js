@@ -45,6 +45,7 @@ import pkmn from "./pkmn_adopt.png";
 import sandbox from "./sandbox.png";
 import sweet from "./suit_drive.png";
 import visualizer from "./spotify_visualizer.png";
+import willoz from './willoz.png';
 
 import dustin from "./testimonials/dustin.webp";
 import juan from "./testimonials/juan.webp";
@@ -96,6 +97,7 @@ export {
   sweet,
   swift,
   visualizer,
+  willoz,
   dustin,
   juan,
   sarah,
