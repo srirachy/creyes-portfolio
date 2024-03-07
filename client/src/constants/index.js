@@ -171,7 +171,7 @@ const experiences = [
     company_name: "BitWise Industries",
     icon: bitwise,
     iconBg: "#756860",
-    date: "March 2022 - Present",
+    date: "March 2022 - June 2023",
     description: "Focused on optimizing web application interfaces and performance",
     points: [
       "Enhanced web app UX/UI, improving performance by 40% and customer satisfaction by 25%",
